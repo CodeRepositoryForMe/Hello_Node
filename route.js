@@ -1,4 +1,5 @@
 const fs = require('fs');
+const { runInContext } = require('vm');
 
 const requestHandler = (req, res) => {
     const url = req.url;
@@ -38,3 +39,15 @@ const requestHandler = (req, res) => {
 };
 
 module.exports = requestHandler;
+
+// module.exports.handler =  requestHandler;
+// module.exports.sometext  = "Test Data"
+
+//exports.handler =  requestHandler;
+///exports.sometext  = "Test Data"
+
+// module.exports = {
+//     handler = requestHandler,
+//     someText = "Some Text"
+// }
+
